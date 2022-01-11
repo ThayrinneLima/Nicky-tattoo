@@ -10,21 +10,20 @@ const routes: Routes = [{
   path:"",
   component:SobreComponent
 },
-
 {
-  path:"/sobre",
+  path:"sobre",
   component:SobreComponent
 },
 {
-  path:"/estilos",
+  path:"estilos",
   component:EstilosComponent
 },
 {
-  path:"/trabalhos",
+  path:"trabalhos",
   component:TrabalhosComponent
 },
 {
-  path:"/dicas",
+  path:"dicas",
   component:DicasComponent
 },
 {
