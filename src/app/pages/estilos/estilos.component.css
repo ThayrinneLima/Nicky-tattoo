@@ -1,0 +1,57 @@
+.estilo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.conteudo{
+    width: 1132px;
+background: var(--unnamed-color-c7bd51d9) 0% 0% no-repeat padding-box;
+border: 1px solid var(--unnamed-color-707070);
+background: #C7BD51D9 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+padding: 18px 100px 0 100px;
+}
+.cabecalho{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 71px;
+}
+h1{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 60px/73px var(--unnamed-font-family-old-english-text-mt);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-161616);
+text-align: left;
+font: normal normal normal 60px/73px Old English Text MT;
+letter-spacing: 0px;
+color: #161616;
+}
+::ng-deep .accordion, ::ng-deep .accordion-item,::ng-deep .accordion-button,::ng-deep .accordion-button:active{
+    background: none;
+    border: none;
+    outline: none;
+}
+::ng-deep .accordion-body{
+    display: flex;
+}
+
+button{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 48px/var(--unnamed-line-spacing-36) var(--unnamed-font-family-old-english-text-mt);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal normal 48px/36px Old English Text MT;
+letter-spacing: 0px;
+color: #131313;
+}
+p{
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-28)/var(--unnamed-line-spacing-36) var(--unnamed-font-family-georgia);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-161616);
+text-align: left;
+font: normal normal normal 26px/34px Georgia;
+letter-spacing: 0px;
+color: #161616;
+}
