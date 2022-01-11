@@ -11,7 +11,7 @@ background: var(--unnamed-color-c7bd51d9) 0% 0% no-repeat padding-box;
 border: 1px solid var(--unnamed-color-707070);
 background: #C7BD51D9 0% 0% no-repeat padding-box;
 border: 1px solid #707070;
-padding: 18px 100px 0 100px;
+padding: 18px 100px 40px 100px;
 }
 .cabecalho{
     width: 100%;
@@ -29,13 +29,26 @@ font: normal normal normal 60px/73px Old English Text MT;
 letter-spacing: 0px;
 color: #161616;
 }
-::ng-deep .accordion, ::ng-deep .accordion-item,::ng-deep .accordion-button,::ng-deep .accordion-button:active{
+::ng-deep .accordion, ::ng-deep .accordion-item,::ng-deep .accordion-button,::ng-deep .accordion-button:active,::ng-deep .accordion-button:not(.collapse){
     background: none;
     border: none;
     outline: none;
+    box-shadow: none;
+    color:unset;
+    background-image: none;
+}
+.accordion-button:not(.collapsed)::after, .accordion-button::after{
+    background-image: url(../../../assets/images/arrow.png);
+    background-size:cover;  
+    margin-left:25px;
 }
 ::ng-deep .accordion-body{
     display: flex;
+}
+.accordion-button{
+    width:58%;
+    display: flex;
+    justify-content: space-between;
 }
 
 button{
@@ -44,7 +57,7 @@ letter-spacing: var(--unnamed-character-spacing-0);
 text-align: left;
 font: normal normal normal 48px/36px Old English Text MT;
 letter-spacing: 0px;
-color: #131313;
+color: #131313!important;
 }
 p{
 font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-28)/var(--unnamed-line-spacing-36) var(--unnamed-font-family-georgia);
